@@ -44,11 +44,11 @@ body {
 }
 
 .title {
-    font-family: 'Roboto', sans-serif;
+
     text-align: center;
     color: $bg;
     font-size: 36px;
-    font-weight: 700;
+    @include f700;
     line-height: 60px;
     margin-bottom: 30px;
 }
