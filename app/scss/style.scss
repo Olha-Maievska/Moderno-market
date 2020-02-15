@@ -350,10 +350,44 @@
             width: 70px;
         }
     }
-
 }
 
-
+//Author ========================
+ .author {
+     margin-top: 5px;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     min-height: 750px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     &__box {
+         max-width: 650px;
+         width: 100%;
+         min-height: 215px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         background-color: $green;
+     }
+     &__title {
+        color: #ffffff;
+        font-size: 30px;
+        line-height: 36px;
+        margin-right: 45px;
+        max-width: 265px;
+        span {
+             @include f700;
+         }
+     }
+     &__link {
+        background-color: #ffffff;
+        font-style: 18px;
+        line-height: 36px;
+        padding: 14px 40px;
+     }
+}
 
 
 
