@@ -34,6 +34,14 @@ $(function() {
         $('.icon-th-large').addClass('active');
     });
 
+    $('.header__btn-menu').on('click', function() {
+        $('.header__box').toggleClass('active');
+    });
+
+    $('.burger__menu').on('click', function() {
+        $('.menu__list').slideToggle();
+    });
+
     var mixer = mixitup('.products__inner-box');
 
 
