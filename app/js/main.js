@@ -42,6 +42,15 @@ $(function() {
         $('.menu__list').slideToggle();
     });
 
+    $('.product__one-tabs .tab').on('click', function(event) {
+        var id = $(this).attr('data-id');
+        $('.product__one-tabs').find('.tab-item').removeClass('active-tab').hide();
+        $('.product__one-tabs .tabs').find('.tab').removeClass('active');
+        $(this).addClass('active');
+        $('#'+id).addClass('active-tab').fadeIn();
+        return false;
+    });
+
     var mixer = mixitup('.products__inner-box');
 
 
