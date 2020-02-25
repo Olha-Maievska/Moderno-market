@@ -1941,6 +1941,111 @@ button.icon-sort {
     }
 }
 
+// Page 404 =========================
+
+.page_404,
+.page__about {
+    background-color: #f4f6f5;
+    padding-bottom: 150px;
+}
+
+.page__404-wrapper,
+.page__about-wrapper {
+    border: 1px solid #d7d7d7;
+    background-color: #ffffff;
+}
+
+.page__404-head,
+.page__about-head {
+    padding: 23px 27px;
+    color: #444444;
+    font-size: 24px;
+    @include f500;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.page__404-inner {
+    text-align: center;
+    background-color: $green;
+}
+
+.page__404-404 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    color: #fff;
+    padding-bottom: 20px;
+    font-size: 300px;
+    padding-top: 70px;
+    line-height: 300px;
+    position: relative;
+    &::after {
+        position: absolute;
+        content: "";
+        background-image: url(../img/content/page__404.png);
+        width: 150px;
+        height: 292px;
+        margin-left: 20px;
+    }
+}
+
+.page__404-title {
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #ffffff;
+    @include f500;
+    letter-spacing: 6px;
+}
+
+.page__404-text {
+    max-width: 501px;
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0 auto 60px;
+}
+
+.page__404-link {
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    @include f700;
+    padding: 20px 30px 16px;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    margin-bottom: 100px;
+}
+
+
+// About =============================
+
+.page__about-inner {
+    padding: 0 50px;
+}
+
+.page__about-box {
+    h3 {
+        font-size: 20px;
+        color: #444444;
+        @include f700;
+        margin: 40px 0 15px;
+    }
+    p {
+        margin-bottom: 40px;
+        color: #707070;
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
