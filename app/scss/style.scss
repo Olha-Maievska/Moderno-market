@@ -395,6 +395,109 @@
     }
 }
 
+//Modal ================================
+
+#modal {
+    background-color: $green;
+    max-width: 730px;
+    width: 100%;
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+
+.login__title {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 48px;
+    margin: 40px;
+    @include f700;
+}
+
+.modal__wrapper {
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    label {
+        position: relative;
+        &::before {
+            position: absolute;
+            font-size: 14px;
+            color: #ffffff;
+            font-family: 'icomoon';
+            left: 18px;
+            top: 9px;
+        }
+    }
+    .login__label-name::before {
+      content: "\f007";
+    }
+    .login__label-pass::before {
+        content: "\f023";
+    }
+    input {
+        height: 43px;
+        margin-bottom: 8px;
+        border: none;
+        background-color: #76ae36;
+        color: #fff;
+        padding-left: 40px;
+        display: block;
+        font-size: 14px;
+        width: 100%;
+        &::placeholder {
+            color: #ffffff;
+            font-size: 14px;
+
+        }
+    }
+    button {
+        padding: 18px 0 16px;
+        margin-top: 19px;
+        background-color: #ffffff;
+        border: none;
+        margin-right: 10px;
+        @include f700;
+        box-shadow: 0 2px 2px rgba(118, 174, 54, 0.75);
+        text-align: center;
+        color: #000000;
+        font-size: 14px;
+        width: 140px;
+        text-transform: uppercase;
+    }
+
+}
+
+.create-acc {
+    padding: 15px 0 15px 28px;
+    margin-top: 19px;
+    width: 245px;
+    text-align: center;
+    background-color: #76ae36;
+    font-size: 18px;
+    color: #ffffff;
+    position: relative;
+    &::before {
+        content: "\f044";
+        font-family: 'icomoon';
+        top: 15px;
+        left: 35px;
+        position: absolute;
+    }
+}
+
+.lost-pass {
+    display: block;
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.fancybox-button svg path {
+    color: #fff;
+}
+
 //Products ==============================
 
 .products {
