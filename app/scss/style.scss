@@ -2269,11 +2269,135 @@ button.icon-sort {
     }
 }
 
+// Upload =============================
 
+.upload__inner {
+    border: 1px solid #d7d7d7;
+    background-color: #ffffff;
+    margin-bottom: 110px;
+    button {
+        color: #FFF;
+        background-color: $green;
+        padding: 15px 35px;
+        margin-left: 175px;
+        border: none;
+        cursor: pointer;
+    }
+}
 
+.upload__title {
+    padding: 16px 35px 18px;
+    font-size: 24px;
+    @include f500;
+    color: $bg;
+    border-bottom: 1px solid #d7d7d7;
+    margin-bottom: 40px;
+}
 
+.upload__content {
+    margin-bottom: 30px;
+    padding-left: 45px;
+    padding-right: 50px;
+}
 
-
+.upload__line {
+    margin-bottom: 25px;
+    display: flex;
+    label {
+        min-width: 175px;
+        padding-right: 15px;
+        color: #444;
+        padding-top: 5px;
+        span {
+            color: $green;
+            font-size: 24px;
+        }
+        &::placeholder {
+            color: #707070;
+        }
+    }
+    select,
+    input,
+    textarea {
+        width: 100%;
+        background-color: #f9f9f9;
+        border: 1px solid #d7d7d7;
+        height: 40px;
+        padding: 0 18px;
+    }
+    textarea {
+        padding: 8px 18px;
+        resize: none;
+        height: 150px;
+    }
+    input[type="file"] {
+        outline: none;
+    }
+    .jq-selectbox {
+        width: 100%;
+    }
+    .jq-selectbox__select {
+        height: 40px;
+        padding: 0 18px;
+        border: 1px solid #d7d7d7;
+        border-bottom-color: #d7d7d7;
+        border-radius: 0px;
+        background: #f9f9f9;
+        box-shadow: none;
+        font-family: 'Roboto-Regular', sans-serif;
+        color: #707070;
+        text-shadow: none;
+        line-height: 40px;
+    }
+    .jq-selectbox__trigger {
+        border: none;
+        right: 10px;
+        top: 3px;
+        width: 9px;
+        height: 6px;
+    }
+    .jq-file {
+        width: 100%;
+        border-radius: 0px;
+        box-shadow: none;
+        height: 40px;
+        padding: 0 18px;
+        border: 1px solid #d7d7d7;
+        background: #f9f9f9;
+    }
+    .jq-file__name {
+        box-sizing: border-box;
+        width: 100%;
+        height: 40px;
+        padding: 0 18px;
+        border: none;
+        border-bottom-color: none;
+        border-radius: 0px;
+        background: transparent;
+        box-shadow: none;
+        font-size: 12px;
+        color: #707070;
+        font-family: 'Roboto-Regular', sans-serif;
+        line-height: 40px;
+        margin-left: 80px;
+    }
+    .jq-file__browse {
+        top: 6px;
+        left: 9px;
+        right: auto;
+        font-size: 12px;
+        line-height: 26px;
+        padding: 0 12px;
+        border-left: none;
+        border-radius: 0;
+        background: #fff;
+        box-shadow: none;
+        text-shadow: none;
+        color: #444444;
+        font-family: 'Roboto-Regular', sans-serif;
+        border: 1px solid #d7d7d7;
+    }
+}
 
 
 
